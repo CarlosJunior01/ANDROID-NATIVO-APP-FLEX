@@ -1,4 +1,4 @@
-package com.cursoandroid.flex_alcoolougasolina;
+package com.android.flex_alcoolougasolina;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -39,11 +39,7 @@ public class MainActivity extends AppCompatActivity {
             Double valorAlcool = Double.parseDouble(precoAlcool);
             Double valorGasolina = Double.parseDouble(precoGasolina);
 
-            /* Fazer cálculo de menor preço:
-             * Se (valorAlcool / valorGasolina) >= 0.7 é melhor utilizar gasolina
-             *  senão é melhor utilizar álcool.
-             */
-
+            //Cálculo de menor preço
             if((valorAlcool / valorGasolina) >= 0.7 ){
                 textResultado.setText("É melhor abastecer com ''Gasolina!''");
                 textResultado.setTextColor(Color.parseColor("#00CF07"));
